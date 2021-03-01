@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+超链接
+ href:资源路径,可以指向本站资源,也可以只想站外资源,如果浏览器支持
+ 浏览器指向的资源则会直接浏览,如果不支持则会触发下载
+
+ 图片超链接:用a标签包裹img标签,则为图片超链接
+
+ 网页内部跳转:在跳转目的地的元素里添加id 然后用a标签href中写入#+id可实现跳转
+
+-->
+
+<a href="http://www.tmooc.cn/">超链接1</a><br>
+<a href="03简历练习.html">超链接2</a><br>
+<a href="dog.jpg">超链接3</a><br>
+
+<!--如果href指向的文件浏览器不支持浏览,则触发下载  如加压缩包-->
+<a href="123.zip">超链接4</a><br>
+
+<a href="https://www.baidu.com/"><img src="dog.jpg" alt=""></a> <br><!--超链接中放图片就是点图片跳转-->
+
+<img src="../dog2.jpg" alt="" id="top"><br>
+<img src="../dog2.jpg" alt=""><br>
+<img src="../dog2.jpg" alt=""><br>
+<img src="../dog2.jpg" alt=""><br>
+<img src="../dog2.jpg" alt=""><br>
+<img src="../dog2.jpg" alt=""><br>
+<img src="../dog2.jpg" alt=""><br>
+<img src="../dog2.jpg" alt=""><br>
+<img src="../dog2.jpg" alt=""><br>
+<img src="../dog2.jpg" alt=""><br>
+<img src="../dog2.jpg" alt=""><br>
+<img src="../dog2.jpg" alt=""><br>
+
+<a href="#top">回到顶部</a><!--跳转 在一个位置添加id 在超链接地址处写入 #+设置想跳转的id-->
+</body>
+</html>

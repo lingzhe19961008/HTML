@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--action提交地址-->
+<form action="http://www.tmooc.cn/">
+
+           <!--name 是所有控件必须添加的属性 否则不提交该数据-->
+           <!--placeholder站位文本  输入行中默认显示提示文字-->
+           <!--maxlength 最大字符长度-->
+           <!--value 设置默认值-->
+           <!--readonly 设置只读   只能读不能输入更改内容-->
+    用户名: <input type="text" name="username"
+                  maxlength="6"
+                  value="zbc"
+                  readonly="readonly"
+                  placeholder="请输入姓名"><br>
+    密码:  <input type="password" name="password" placeholder="请输入密码"><br>
+
+    性别 :<input type="radio" name="gender" value="men" checked="checked" id="r1" > <label for="r1">男</label>
+         <!--radio 单选框  必须写相同的name 不然两个都可以选
+             chicked 默认选中
+             如果不加value 提交的内容是on 必须写value指定提交的内容
+         -->
+
+        <input type="radio" name="gender" value="women"  id="r2"> <label for="r2">女</label>
+    <br>
+
+    <!--单选和多选的属性通用-->
+    兴趣爱好:<input type="checkbox" name="hobby" value="cy" id="c1"><label for="c1">抽烟 </label>
+           <input type="checkbox" name="hobby" value="hj" checked="checked"  id="c2"><label for="c2">喝酒</label>
+           <input type="checkbox" name="hobby" value="tt"  id="c3"><label for="c3">烫头</label>
+
+    <br>
+
+    生日:  <input type="date" name="birthday"> <br>  <!--日期选择器 -->
+
+    靓照: <input type="file" name="pic"><br>  <!--文件选择器-->
+
+    <!--文本域 textarea cols列 rows行-->
+    自我介绍:<textarea name="intro"
+                      placeholder="说点什么.."
+                      cols="20" rows="3"></textarea> <br>
+
+    <!--下拉选项 select selected 默认下拉选项  浏览器不支持中文 设置value替换中文 <option>选项-->
+    所在地: <select  name="city">
+               <option value="bj" >北京</option>
+               <option value="sh" selected="selected">上海</option>
+               <option value="gz">广州</option>
+               <option value="sz">深圳</option>
+           </select>   <br>
+         <input type="submit" value="注册">  <!--submit 提交按钮-->
+         <input type="reset">  <!--reset重置按钮  form表单中内容刷新-->
+         <input type="button" value="自定义按钮" > <!--button自定义按钮 学习javaScript后才能添加点击所做的事-->
+    <hr>
+
+
+    
+</form>
+
+    <form action="http://www.baidu.com">
+         姓名:<input type="text" name="username" maxlength="6" placeholder="请输入姓名" readonly="readonly" value="还想写名字??">
+        <br>
+        性别:<input type="radio" name="gender" id="man" checked="checked"><label for="man">男</label>
+            <input type="radio" name="gender" id="woman"><label for="woman">女</label> <br>
+         密码:<input type="password" maxlength="20" name="password"> <br>
+         生日: <input type="date" name="birthday"> <br>
+         爱好:  <input type="checkbox" name="hobby" id="cy"><label for="cy">抽烟</label>
+               <input type="checkbox" name="hobby" id="hj" checked="checked"><label for="hj">喝酒</label>
+               <input type="checkbox" name="hobby" id="tt"><label for="tt">烫头</label> <br>
+        所在地:<select name="city">
+                  <option value="b">北</option>
+                  <option value="s">上</option>
+                  <option value="g">广</option>
+              </select> <br>
+        自我介绍:<textarea name="ziwojieshao" placeholder="sbzm" cols="20" rows="3">
+
+                </textarea> <br>
+        扫比照片: <input type="file" name="photo"> <br>
+        <input type="submit" value="提交">
+        <input type="reset" value="重置">
+        <input type="button" value="啥也不是">
+    </form>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

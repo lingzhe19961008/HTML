@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+  scr:路径
+  1:相对路径:访问站内资源时使用
+    - 图片和页面在同级目录:直接写图片名
+    - 图片在页面上级的目录: ../图片名  上上级目录../../  每上一个文件夹加一个../
+    - 图片在页面下级的文件夹:文件夹名/图片名
+    - 图片在下级目录:
+  2:绝对路径:访问站外资源时使用,称为图片盗链 存在一定安全隐患
+    如果路径中发生改变则会找不到图片 但是会节省自己网站的资源
+
+   title 鼠标停留显示
+   height: 500
+   width: 500
+   默认单位:px 像素
+   width: 50%图片按百分比显示
+   如果只设置宽度 高度会等比例缩放  只写高也是同理
+   alt 图片无法正常显示时显示的文本
+
+   -->
+<center>
+    <img src="dog.jpg" alt="" title="这是张猛" width="500" height="500"><br>
+    <img src="../dog2.jpg" alt="" ><br>
+    <img src="lastDir/dog3.jpg" alt=""><br>
+    <img src="http://cdn.tmooc.cn/bsfile//courseImg///73e7bc70b9c94f7188db77db211e53d3.png" alt=""><br>
+</center>
+
+</body>
+</html>
