@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*通过选择器选择到标签后 添加样式*/
+        /*标签名选择器 : 选取页面中所有同名标签*/
+        h2{
+            color: yellow;
+        }/*需要些在header里*/
+    </style>
+    <link rel="stylesheet" href="my.css"> <!--外部样式需要写再header rel格式 -->
+</head>
+<!--
+1.什么是CSS
+CSS是 Cascading Style Sheet 层叠样式表
+作用:用于美化html页面
+2如何在html页面中添加CSS样式
+
+1内联 在标签内部的style属性中书写样式代码 不能复用
+2内部 在header标签里添加style标签,在标签体内通过选择器选择到元素后给元素添加样式,能复用但是只能在当前页面复用
+3外部  在单独的css文件写样式代码,在html页面中用过link标签引用可以实现页面复用
+
+优先级 内联->内部和外部优先级相当,后执行会覆盖限制性的代码
+heaeder中的顺序为准,后执行代码会覆盖前面   内部 外部
+-->
+<body>
+<h3>外部测试1</h3>
+<h3>外部测试2</h3>
+<h2>内部测试1</h2>
+<h2>内部测试2</h2>
+<!--内联样式:在标签内部的style属性中书写样式代码 弊端不能复用-->
+<h1 style="color: chartreuse">内联测试1</h1>
+
+<h1 >内联测试2</h1>
+</body>
+</html>

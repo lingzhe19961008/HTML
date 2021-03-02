@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #d1{
+            color: yellow; /*id选择器*/
+        }
+        .c1{
+            color: blue;  /*class选择器*/
+        }
+        #d1,.c1,h3{
+            background-color: bisque;  /*分组选择器*/
+        }
+    </style>
+</head>
+<body>
+<!--选择器
+      1:标签选择器
+           格式:标签名{样式代码}
+           选取页面中所有同名标签
+      2:id选择器:
+            样式  #id{样式代码}
+            选取页面中相同id的元素
+      3:class选择器
+           格式 .class{样式代码}
+           当需要选择页面中多个不相关元素时,给元素添加相同的class进行选取
+      4:分组选择器
+           样式 div,#id, .class{样式代码}
+      5:任意元素选择器
+        格式 *{样式代码}
+        选取页面中所有的元素
+     6属性选择器
+        格式 标签名[属性名='值']{样式代码}
+     7,子孙后代选择器
+         格式: div div span{样式代码}
+         匹配div里面的div李曼的所有span包括后代
+     8子元素选择器
+         格式:div>div>span
+-->
+
+<div id="d1">div1</div>
+<div>div2</div>
+<div class="c1">div3</div>
+<span>span1</span>
+<span>span2</span>
+<span class="c1">span3</span>
+<h3>我是h3</h3>
+
+</body>
+</html>
